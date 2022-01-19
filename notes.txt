@@ -1,0 +1,23 @@
+Steps to this project
+
+0) Create MongoDB account, generate sample data 
+
+I) Create backend folder
+    a) create server.js, which begins the URL connections and error handling
+    b) create .env file with certain variables, pass in MongoDB API key
+    c) create index.js which is main connection to the mongoDB 
+
+II) Setup API and DAO 
+    a) create dao/restaurantsDAO , database access object. Contains getRestaurants, 3 filter optional parameters
+    b) create api/restaurants.route.js. Contains
+
+III) Enable Post, Put, and Delete on route.js  
+    post - create a new review 
+    put - edit review
+    delete - delete review 
+
+    a) edit restaurants.route.js
+    b) create controller api/reviews.controller.js
+    c) create data access object dao/reviewsDAO.js
+    d) add reviewsDAO injection in index.js
+
