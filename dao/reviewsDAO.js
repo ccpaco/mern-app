@@ -1,4 +1,4 @@
-import mongodb, { ObjectId } from "mongodb";
+import mongodb from "mongodb";
 
 const MongoObjectId = mongodb.ObjectId;
 
@@ -10,9 +10,7 @@ export default class ReviewsDAO {
       return;
     }
     try {
-      reviews = await conn
-        .db(process.env.RESTREVIEWS_NS)
-        .collections("reviews");
+      reviews = await conn.db(process.env.RESTREVIEWS_NS).collection("reviews");
     } catch (e) {
       console.error(`Unable to establish collection handles in userDAO: ${e}`);
     }
