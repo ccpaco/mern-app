@@ -9,7 +9,8 @@ I) Create backend folder
 
 II) Setup API and DAO 
     a) create dao/restaurantsDAO , database access object. Contains getRestaurants, 3 filter optional parameters
-    b) create api/restaurants.route.js. Contains
+    b) create api/restaurants.route.js. 
+    c) "add index" in MongoDB for restaurants "name" property in collection.
 
 III) Enable Post, Put, and Delete on route.js  
     post - create a new review 
